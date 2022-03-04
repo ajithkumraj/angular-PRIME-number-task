@@ -1,0 +1,16 @@
+<div class="container"
+          [style.padding-bottom.px]="dynamicPadding">
+      <div class="intro">
+        <h1>{{title}}</h1>
+         
+        <input #nPrime type="text"/>
+        <button (click)="getN()">Introduce 'n'</button>
+      </div>
+      <div class="primes">
+        <ul>
+          <li *ngFor="let prime of primeNumbers">
+            {{prime}}
+          </li>
+        </ul>
+      </div>
+    </div>
